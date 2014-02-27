@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7426CB221B1CE45D5FBC2654 /* NSDictionary+CHFunctionalDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7426CCD60E32CCA1E6DCC494 /* NSDictionary+CHFunctionalDictionaryAdditions.m */; };
 		DB15575018BFDE0D00654F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15574F18BFDE0D00654F14 /* Foundation.framework */; };
 		DB15575218BFDE0D00654F14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15575118BFDE0D00654F14 /* CoreGraphics.framework */; };
 		DB15575418BFDE0D00654F14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15575318BFDE0D00654F14 /* UIKit.framework */; };
@@ -20,7 +21,7 @@
 		DB15577018BFDE0D00654F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15574F18BFDE0D00654F14 /* Foundation.framework */; };
 		DB15577118BFDE0D00654F14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15575318BFDE0D00654F14 /* UIKit.framework */; };
 		DB15577918BFDE0D00654F14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB15577718BFDE0D00654F14 /* InfoPlist.strings */; };
-		DB15577B18BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15577A18BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests.m */; };
+		DB15578618BFDFAE00654F14 /* CH_dict_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15578518BFDFAE00654F14 /* CH_dict_tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7426CCD60E32CCA1E6DCC494 /* NSDictionary+CHFunctionalDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CHFunctionalDictionaryAdditions.m"; path = "Source/NSDictionary+CHFunctionalDictionaryAdditions.m"; sourceTree = "<group>"; };
+		7426CD1958E9C85916506763 /* NSDictionary+CHFunctionalDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+CHFunctionalDictionaryAdditions.h"; path = "Source/NSDictionary+CHFunctionalDictionaryAdditions.h"; sourceTree = "<group>"; };
 		DB15574C18BFDE0D00654F14 /* CHFunctionalDictionaryAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHFunctionalDictionaryAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB15574F18BFDE0D00654F14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB15575118BFDE0D00654F14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +55,7 @@
 		DB15576E18BFDE0D00654F14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DB15577618BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CHFunctionalDictionaryAdditionsTests-Info.plist"; sourceTree = "<group>"; };
 		DB15577818BFDE0D00654F14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DB15577A18BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHFunctionalDictionaryAdditionsTests.m; sourceTree = "<group>"; };
+		DB15578518BFDFAE00654F14 /* CH_dict_tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CH_dict_tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		DB15575518BFDE0D00654F14 /* CHFunctionalDictionaryAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				DB15578418BFDE4100654F14 /* Source */,
 				DB15575E18BFDE0D00654F14 /* CHAppDelegate.h */,
 				DB15575F18BFDE0D00654F14 /* CHAppDelegate.m */,
 				DB15576118BFDE0D00654F14 /* Main.storyboard */,
@@ -137,7 +141,6 @@
 		DB15577418BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB15577A18BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests.m */,
 				DB15577518BFDE0D00654F14 /* Supporting Files */,
 			);
 			path = CHFunctionalDictionaryAdditionsTests;
@@ -148,8 +151,18 @@
 			children = (
 				DB15577618BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests-Info.plist */,
 				DB15577718BFDE0D00654F14 /* InfoPlist.strings */,
+				DB15578518BFDFAE00654F14 /* CH_dict_tests.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB15578418BFDE4100654F14 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7426CCD60E32CCA1E6DCC494 /* NSDictionary+CHFunctionalDictionaryAdditions.m */,
+				7426CD1958E9C85916506763 /* NSDictionary+CHFunctionalDictionaryAdditions.h */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				DB15575C18BFDE0D00654F14 /* main.m in Sources */,
 				DB15576018BFDE0D00654F14 /* CHAppDelegate.m in Sources */,
 				DB15576618BFDE0D00654F14 /* CHViewController.m in Sources */,
+				7426CB221B1CE45D5FBC2654 /* NSDictionary+CHFunctionalDictionaryAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB15577B18BFDE0D00654F14 /* CHFunctionalDictionaryAdditionsTests.m in Sources */,
+				DB15578618BFDFAE00654F14 /* CH_dict_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +475,7 @@
 				DB15578018BFDE0D00654F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB15578118BFDE0D00654F14 /* Build configuration list for PBXNativeTarget "CHFunctionalDictionaryAdditionsTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				DB15578318BFDE0D00654F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
