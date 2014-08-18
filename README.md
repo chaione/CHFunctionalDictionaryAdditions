@@ -36,8 +36,8 @@ Also available:
 
 Installation
 ===========
-CHFunctionalDictionaryAdditions uses [cocoapods](http://cocoapods.org), though it requires a few steps since it is using the private [ChaiKit-Specs](https://github.com/chaione/ChaiKit-Specs) repo, so a few additional steps are required to be able to pull it in, which you can find [here](http://guides.cocoapods.org/making/private-cocoapods.html). Once that is done just put `pod 'CHFunctionalDictionaryAdditions', :head` into your podfile and install like normal. then just `#import <NSDictionary+CHFunctionalDictionaryAdditions.h>` wherever you want to use it.
+CHFunctionalDictionaryAdditions uses [cocoapods](http://cocoapods.org), though it requires a few steps since it is using the private [ChaiKit-Specs](http://gitlab.chaione.com/chaikit/chaikit-specs) repo, so a few additional steps are required to be able to pull it in, which you can find [here](http://guides.cocoapods.org/making/private-cocoapods.html). Once that is done just put `pod 'CHFunctionalDictionaryAdditions', :head` into your podfile and install like normal. then just `#import <NSDictionary+CHFunctionalDictionaryAdditions.h>` wherever you want to use it.
 
 Contributing
 ===========
-Contributions and improvements are welcome. Just fork the project and submit a pull request. Make sure you check out the [contributing document](http://github.com/chaione/CHFunctionalDictionaryAdditions/blob/master/CONTRIBUTING.md) first.
+Contributions and improvements are welcome. Just fork the project and submit a pull request. Make sure you check out the [contributing document](http://gitlab.chaione.com/chaikit/chfunctionaldictionaryadditions/blob/master/CONTRIBUTING.md) first.
